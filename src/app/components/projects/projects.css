@@ -1,0 +1,136 @@
+/* ==============================
+   PROJECTS SECTION
+   ============================== */
+
+.projects-section {
+  background: #08111f;
+  padding: 100px 0;
+}
+
+/* Section heading */
+.projects-section .section-heading h2 {
+  color: #ffd700; /* Gold */
+  font-weight: 800;
+}
+
+.projects-section .section-heading span {
+  color: #00ffff; /* Cyan */
+  font-weight: 700;
+}
+
+/* Project card */
+.project-card {
+  height: 100%;
+  background: #101d30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 30px;
+  transition: 0.3s ease;
+}
+
+/* Card hover */
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff00ff;
+
+  box-shadow:
+    0 15px 35px rgba(255, 0, 255, 0.12);
+}
+
+/* Project icon */
+.project-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+
+  background: rgba(0, 255, 255, 0.10);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00ffff;
+
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Project headings */
+.project-card h3 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+
+  color: #ffd700; /* Gold */
+  font-weight: 700;
+}
+
+/* Give each project a different bright heading */
+.project-card:nth-child(1) h3 {
+  color: #ffd700; /* Gold */
+}
+
+.project-card:nth-child(2) h3 {
+  color: #ff00ff; /* Fuchsia */
+}
+
+.project-card:nth-child(3) h3 {
+  color: #ff69b4; /* Pink */
+}
+
+/* Project description */
+.project-card p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* Project tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+/* Tags */
+.project-tags span {
+  font-size: 0.8rem;
+
+  color: #e2e8f0;
+
+  background: #16263d;
+
+  padding: 6px 10px;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Tag hover */
+.project-tags span:hover {
+  color: #ffffff;
+  background: #1e3a5f;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 80px 0;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+}

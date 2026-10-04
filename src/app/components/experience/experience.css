@@ -1,0 +1,199 @@
+/* ==============================
+   EXPERIENCE SECTION
+   ============================== */
+
+#experience {
+  background: #0b1524;
+  color: #cbd5e1;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Timeline vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #00ffff,
+    #ff00ff,
+    #ffd700
+  );
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+
+/* Timeline dot */
+.timeline-dot {
+  position: absolute;
+  left: 2px;
+  top: 25px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  background: #00ffff;
+
+  border: 4px solid #0b1524;
+
+  box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* Experience Card */
+.experience-card {
+  background: #101d30;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 15px;
+
+  padding: 30px;
+
+  transition: 0.3s ease;
+}
+
+/* Card hover */
+.experience-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #00ffff;
+
+  box-shadow:
+    0 15px 35px rgba(0, 255, 255, 0.12);
+}
+
+/* Header */
+.experience-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 20px;
+}
+
+/* Job title */
+.experience-header h3 {
+  margin-bottom: 8px;
+
+  color: #ffd700;
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+}
+
+/* Company name */
+.experience-header h4 {
+  color: #ff00ff;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  margin-bottom: 0;
+}
+
+/* Date */
+.experience-header span {
+  color: #00ffff;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  background: rgba(0, 255, 255, 0.08);
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Location */
+.location {
+  color: #ffa500 !important;
+
+  margin-top: 15px;
+
+  font-weight: 500;
+}
+
+.location i {
+  color: #ff69b4;
+
+  margin-right: 5px;
+}
+
+/* Experience description */
+.experience-card ul {
+  color: #cbd5e1;
+
+  line-height: 1.8;
+
+  margin-top: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
+}
+
+/* Bullet color */
+.experience-card li::marker {
+  color: #00ffff;
+}
+
+/* Section heading */
+#experience .section-heading h2 {
+  color: #ffd700;
+
+  font-weight: 800;
+}
+
+#experience .section-heading span {
+  color: #00ffff;
+
+  font-weight: 700;
+}
+
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 768px) {
+
+  .experience-header {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .experience-header span {
+    display: inline-block;
+
+    width: fit-content;
+  }
+
+  .experience-header h3 {
+    font-size: 1.3rem;
+  }
+
+}

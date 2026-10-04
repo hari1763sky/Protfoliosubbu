@@ -1,0 +1,93 @@
+/* Skills Section */
+.skills-section {
+  background: #08111f;
+  padding: 100px 0;
+}
+
+/* Main Section Heading */
+.skills-section .section-heading h2 {
+  color: #ffd700; /* Gold */
+  font-weight: 800;
+}
+
+.skills-section .section-heading span {
+  color: #00ffff; /* Cyan */
+  font-weight: 700;
+}
+
+/* Skill Cards */
+.skill-card {
+  height: 100%;
+  background: #101d30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 30px;
+  transition: 0.3s ease;
+}
+
+/* Card Hover */
+.skill-card:hover {
+  transform: translateY(-7px);
+  border-color: #00ffff;
+  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.15);
+}
+
+/* Icons */
+.skill-card > i {
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+/* Individual Heading Colors */
+.skill-card:nth-child(1) h4 {
+  color: #ffd700; /* Gold */
+}
+
+.skill-card:nth-child(2) h4 {
+  color: #ff00ff; /* Fuchsia */
+}
+
+.skill-card:nth-child(3) h4 {
+  color: #ff69b4; /* Hot Pink */
+}
+
+.skill-card:nth-child(4) h4 {
+  color: #00ffff; /* Cyan */
+}
+
+.skill-card:nth-child(5) h4 {
+  color: #ffa500; /* Orange */
+}
+
+.skill-card:nth-child(6) h4 {
+  color: #c084fc; /* Violet */
+}
+
+/* Heading formatting */
+.skill-card h4 {
+  margin: 20px 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+/* Skill Tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags span {
+  background: #16263d;
+  color: #e2e8f0;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Tag Hover */
+.skill-tags span:hover {
+  background: #1e3a5f;
+  color: #ffffff;
+}

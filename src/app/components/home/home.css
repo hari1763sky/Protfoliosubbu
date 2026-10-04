@@ -1,0 +1,264 @@
+.hero-section {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(13, 110, 253, 0.18),
+      transparent 35%
+    ),
+    #08111f;
+
+  color: white;
+  padding-top: 80px;
+}
+
+.hero-greeting {
+  color: #0d6efd;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-section h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.hero-section h2 {
+  color: #0d6efd;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  color: #adb5bd;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.tech-stack span {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.code-window {
+  background: #0d1726;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.window-header {
+  background: #111c2d;
+  padding: 14px 18px;
+  display: flex;
+  gap: 7px;
+}
+
+.window-header span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #64748b;
+}
+
+.code-content {
+  padding: 25px;
+  font-family: 'Courier New', monospace;
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.code-content p {
+  margin: 0;
+}
+
+.keyword {
+  color: #c084fc;
+}
+
+.string {
+  color: #4ade80;
+}
+
+.indent {
+  padding-left: 25px;
+}
+
+.double-indent {
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.7rem;
+  }
+}
+
+/* ============================= */
+/* PROFILE PHOTO                 */
+/* ============================= */
+
+.profile-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glowing background */
+.profile-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.25),
+    rgba(255, 0, 255, 0.25)
+  );
+  filter: blur(30px);
+}
+
+/* Photo border */
+.profile-image-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 290px;
+  height: 290px;
+  padding: 6px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #00ffff,
+    #ff00ff,
+    #ffd700
+  );
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.35),
+    0 0 50px rgba(255, 0, 255, 0.15);
+}
+
+/* Actual photo */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  border: 5px solid #08111f;
+  transition: 0.4s ease;
+}
+
+/* Photo hover */
+.profile-image-wrapper:hover .profile-image {
+  transform: scale(1.03);
+}
+
+/* Decorative circles */
+.profile-circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circle-one {
+  width: 25px;
+  height: 25px;
+  background: #00ffff;
+  top: 20px;
+  right: 25px;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.circle-two {
+  width: 18px;
+  height: 18px;
+  background: #ff00ff;
+  bottom: 35px;
+  left: 25px;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+/* ============================= */
+/* MOBILE                       */
+/* ============================= */
+
+@media (max-width: 991px) {
+
+  .profile-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile-glow {
+    width: 270px;
+    height: 270px;
+  }
+
+  .profile-image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .profile-container {
+    width: 270px;
+    height: 270px;
+  }
+
+  .profile-glow {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile-image-wrapper {
+    width: 225px;
+    height: 225px;
+  }
+
+  .circle-one {
+    right: 10px;
+  }
+
+  .circle-two {
+    left: 10px;
+  }
+
+}

@@ -1,0 +1,128 @@
+.contact-section {
+  background: #08111f;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Contact Heading */
+.contact-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+  font-weight: 700;
+}
+
+/* Contact Description */
+.contact-text {
+  color: #cbd5e1;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Contact Items */
+.contact-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+/* Contact Card */
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+  min-width: 280px;
+  padding: 20px;
+  background: #101d30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Contact Card Hover */
+.contact-card:hover {
+  transform: translateY(-7px);
+  border-color: #00ffff;
+  box-shadow: 0 12px 30px rgba(0, 255, 255, 0.15);
+}
+
+/* Contact Icons */
+.contact-card i {
+  color: #00ffff;
+  font-size: 1.5rem;
+  min-width: 25px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover i {
+  color: #ff00ff;
+  transform: scale(1.15);
+}
+
+/* Small Label */
+.contact-card small {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 3px;
+}
+
+/* Contact Details */
+.contact-card strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+/* Different colors for cards */
+.contact-card:nth-child(1) i {
+  color: #00ffff;
+}
+
+.contact-card:nth-child(2) i {
+  color: #ff69b4;
+}
+
+.contact-card:nth-child(3) i {
+  color: #ffa500;
+}
+
+.contact-card:nth-child(1):hover {
+  border-color: #00ffff;
+}
+
+.contact-card:nth-child(2):hover {
+  border-color: #ff00ff;
+}
+
+.contact-card:nth-child(3):hover {
+  border-color: #ffa500;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 80px 0;
+  }
+
+  .contact-section h3 {
+    font-size: 1.7rem;
+  }
+
+  .contact-text {
+    padding: 0 15px;
+  }
+
+  .contact-items {
+    gap: 15px;
+  }
+
+  .contact-card {
+    min-width: 100%;
+    padding: 18px;
+  }
+}
